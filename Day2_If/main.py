@@ -9,6 +9,14 @@ def task1():
     print("Jūsu dzīvesvieta ir " + place_of_living)
 
 
+def task2():
+    number1 = int(input("Ievadiet 1. skaitli!\n"))
+    number2 = int(input("Ievadiet 2. skaitli!\n"))
+
+    print("Summa: " + str(number1 + number2))
+    print("Starpība: " + str(number1 - number2))
+
+
 def integer_sample():
     sample_number = int(input("Ievadiet skaitli!\n")) # ar int() norada, ka inputs bus integers
     print(sample_number)
@@ -26,5 +34,8 @@ def to_string_sample():
 
 
 if __name__ == '__main__':
-    to_string_sample()
+    task2()
+
+    # to_string_sample()
+
 
