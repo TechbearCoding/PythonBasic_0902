@@ -33,9 +33,47 @@ def to_string_sample():
     print(str(sample_number) + " abc") # ar str konverte uz string'u
 
 
-if __name__ == '__main__':
-    task2()
+def var_sample():
+    a = "aa"
+    # Lokals mainigais "a", kas strada tikai var_sample() funkcija
+    print(a)
 
+
+def if_sample():
+    # Izvadit "**", ja cilveka ievadita vertiba ir lielaka par 5, ja ne, tad izvadit "*"
+    personal_input = int(input("Ievadiet skaitli!"))
+
+    # >
+    # <
+    # <=
+    # >=
+    # ==
+    # !=
+
+    if personal_input > 5:
+        print("**")
+    else:
+        print("*")
+
+    string_input = input("ievadiet vardu!")
+    if string_input != "aa":
+        print("**")
+    else:
+        print("*")
+
+
+if __name__ == '__main__':
+
+    a = 3
+    # Lokals mainigais "a", kas strada tikai main funkcija
+    print(a)
+
+    var_sample()
+
+    # a, kurs ir var_sample() nav tas pats a, kurs ir main
+
+    print(a+4)
     # to_string_sample()
 
-
+    # -------------- if --------------
+    if_sample()
