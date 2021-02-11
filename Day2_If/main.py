@@ -17,6 +17,20 @@ def task2():
     print("Starpība: " + str(number1 - number2))
 
 
+def task3():
+    number1 = int(input("Ievadiet 1. skaitli!\n"))
+    number2 = int(input("Ievadiet 2. skaitli!\n"))
+
+    choice = input("Ievadiet + vai -")
+
+    if choice == "+":
+        print("Summa: " + str(number1 + number2))
+    elif choice == "-":
+        print("Starpība: " + str(number1 - number2))
+    else:
+        print("Kļūda!!!")
+
+
 def integer_sample():
     sample_number = int(input("Ievadiet skaitli!\n")) # ar int() norada, ka inputs bus integers
     print(sample_number)
@@ -63,6 +77,7 @@ def if_sample():
 
 
 if __name__ == '__main__':
+    task3()
 
     a = 3
     # Lokals mainigais "a", kas strada tikai main funkcija
