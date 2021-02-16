@@ -76,6 +76,23 @@ def if_sample():
         print("*")
 
 
+def if_sample2():
+    # lietotajs ievada skaitli, parbaudit vai sis skaitlis ir diapazona no 1 lidz 10
+    personal_input = int(input("Ievadiet skaitli!"))
+
+    # if personal_input > 0 and personal_input < 11:  sis ir tas pats, kas rindina zemak
+    if 0 < personal_input < 11:
+        print("Skaitlis ir diapazona")
+    else:
+        print("Nav diapazona!")
+
+    # lietotajs ievada skaitli, parbaudit vai sis skaitlis nav diapazona no 1 lidz 10
+    if personal_input < 1 or personal_input > 10:
+        print("True")
+    else:
+        print("False")
+
+
 if __name__ == '__main__':
     task3()
 
