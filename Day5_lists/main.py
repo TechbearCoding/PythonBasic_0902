@@ -80,9 +80,32 @@ def arg_sample(a):
     a.append(111)
 
 
-if __name__ == '__main__':
-    my_list = [1, 2, 3, 4, 5, 1]
-    arg_sample(my_list)
+def biggest_number(number_list):
+    biggest = number_list[0]
+    for val in number_list:
+        if val > biggest:
+            biggest = val
+    return biggest
 
-    print(my_list)
+
+def search(string_list, item):
+    found = False
+
+    for i in range(len(string_list)):
+        if item == string_list[i]:
+            found = True
+            print(i)
+    if not found:
+        print("Saraksta sadas vertibas nav")
+
+
+if __name__ == '__main__':
+    my_list = [-1, -2, -3, -4, -5, -1]
+
+    string_list = ['AA', 'BB', 'CC', 'AA', 'BB', 'CC']
+    string_list2 = ['AA', 'BB', 'CC']
+
+    joined = string_list2 + string_list
+    print(joined)
+    search(string_list, 'AA')
 
