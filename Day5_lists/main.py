@@ -99,13 +99,52 @@ def search(string_list, item):
         print("Saraksta sadas vertibas nav")
 
 
+def compare_lists(a, b):
+    if len(a) != len(b):
+        return False
+
+    a.sort()
+    b.sort()
+
+    for i in range(0, len(a)):
+        if a[i] != b[i]:
+            return False
+    return True
+
+
+def compare_lists2(a, b):
+    if len(a) != len(b):
+        return False
+
+    a.sort()
+    b.sort()
+
+    if a == b:
+        return True
+    return False
+
+
+def set_sample():
+    dic1 = {4: 'geeks', 1: 'for', 3: 'geeks'}
+    lst = [4, 1, 3]
+    print(dic1)
+    print(lst)
+
+    print(set(dic1))
+    print(set(lst))
+
+
 if __name__ == '__main__':
-    my_list = [-1, -2, -3, -4, -5, -1]
+    # my_list = [-1, -2, -3, -4, -5, -1]
+    #
+    # string_list = ['AA', 'BB', 'CC', 'AA', 'BB', 'CC']
+    # string_list2 = ['AA', 'BB', 'CC']
+    #
+    # joined = string_list2 + string_list
+    # print(joined)
+    # search(string_list, 'AA')
+    # int_list = [1, 3, 2, 4]
+    # int_list2 = [4, 1, 2, 3]
+    # print(compare_lists2(int_list, int_list2))
 
-    string_list = ['AA', 'BB', 'CC', 'AA', 'BB', 'CC']
-    string_list2 = ['AA', 'BB', 'CC']
-
-    joined = string_list2 + string_list
-    print(joined)
-    search(string_list, 'AA')
-
+    set_sample()
