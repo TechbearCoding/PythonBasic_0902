@@ -38,8 +38,6 @@ def read_file():
     print(total / num_count)
 
 
-
-
 if __name__ == '__main__':
     # generate_file(4)
     read_file()

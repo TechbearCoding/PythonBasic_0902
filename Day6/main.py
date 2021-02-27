@@ -35,6 +35,15 @@ def dict_sample():
         "course": 3
     }
 
+    for val in sample.values():
+        print(val)
+
+    for val in sample.keys():
+        print(val)
+
+    for key, val in sample.items():
+        print(str(key) + ": " + str(val))
+
     lst_of_dict = [
         {
             "studentName": "Test1",
